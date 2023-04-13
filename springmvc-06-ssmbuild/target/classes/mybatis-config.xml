@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!--配置数据源：交给Spring去做-->
+
+
+    <!--配置别名和设置-->
+    <typeAliases>
+        <!--一个包下的类的别名设置为：该类首字母小写-->
+        <package name="pojo"/>
+    </typeAliases>
+
+
+    <!--配置mapper-->
+    <mappers>
+        <mapper class="dao.BookMapper"/>
+    </mappers>
+
+
+</configuration>
